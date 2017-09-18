@@ -1,0 +1,17 @@
+// include another .scss file from a sub-directory
+@import "./about/about.scss";
+
+/// include all modules of foundation
+
+@import "foundation-sites/scss/foundation";
+
+@include foundation-everything;
+
+body {
+  a {
+    color: red;
+  }
+}
+.test {
+  @include flex-grid-layout(3,pieter);
+}
